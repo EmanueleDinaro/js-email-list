@@ -9,6 +9,11 @@ function randomMails() {
         })
     }
 }
+confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+  });
 
 // DOM
 const btnRndMailElm = document.getElementById('get-rnd-mail-btn')
@@ -16,3 +21,5 @@ const emailListElm = document.getElementById('email-list')
 
 // EVENTS
 btnRndMailElm.addEventListener("click", randomMails)
+btnRndMailElm.addEventListener("click", confetti)
+
